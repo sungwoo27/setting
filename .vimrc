@@ -39,3 +39,4 @@ let ftexclude = ['python']
 au BufWrite * if index(ftexclude, &ft) < 0 | :Autoformat
 noremap <F4> :NERDTreeFocus<CR>
 
+let g:NERDTreeMinimalMenu=1
