@@ -1,6 +1,8 @@
 #!/bin/bash
 apt-get install zsh
 
+apt-get install curl
+
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -31,5 +33,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-cp ./.zshrc ~/.zshrc
-cp ./.p10k.zsh ~/.p10k.zsh
+cp ~/setting/.zshrc ~/.zshrc
+cp ~/setting/p10k.zsh ~/.p10k.zsh
