@@ -9,6 +9,8 @@ endif
 set backspace=indent,eol,start
 set clipboard=unnamedplus
 
+" No indent at 'namespace'
+set cino=N-s
 
 filetype plugin on
 filetype indent on
