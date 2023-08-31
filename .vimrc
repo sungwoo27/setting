@@ -34,7 +34,7 @@ set bg=dark
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
-let g:formatterpath = ['/usr/bin/clang-format-10']
+let g:formatterpath = ['/usr/lib/llvm-10/bin']
 noremap <F3> :Autoformat<CR>
 let ftexclude = ['python']
 " au BufWrite * :Autoformat
