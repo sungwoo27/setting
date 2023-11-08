@@ -24,6 +24,7 @@ Plug 'chrisbra/vim-commentary'
 Plug 'antoinemadec/vim-verilog-instance'
 Plug 'mhinz/vim-signify'
 Plug 'lfiolhais/vim-chisel'
+Plug 'mbbill/undotree'
 
 
 call plug#end()
