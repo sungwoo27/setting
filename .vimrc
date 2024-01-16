@@ -25,6 +25,7 @@ Plug 'antoinemadec/vim-verilog-instance'
 Plug 'mhinz/vim-signify'
 Plug 'lfiolhais/vim-chisel'
 Plug 'mbbill/undotree'
+Plug 'vim-scripts/DoxygenToolkit.vim'
 
 
 call plug#end()
@@ -41,5 +42,6 @@ let ftexclude = ['python']
 " au BufWrite * :Autoformat
 au BufWrite * if index(ftexclude, &ft) < 0 | :Autoformat
 noremap <F4> :NERDTreeFocus<CR>
+noremap <F5> :Dox<CR>
 
 let g:NERDTreeMinimalMenu=1
