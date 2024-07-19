@@ -14,7 +14,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 cp ~/setting/.vimrc ~/.vimrc
 
 # Vim syntax for llvm/mlir/tbgen
-cp ~/setting/.vim/syntax ~/.vim/ -r
+cp ~/setting/.vim/* ~/.vim/ -r
 
 # Powerlevel 10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -30,3 +30,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 cp ~/setting/.zshrc ~/.zshrc
 cp ~/setting/.p10k.zsh ~/.p10k.zsh
+cp ~/setting/.env ~/.env

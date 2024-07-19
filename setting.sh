@@ -1,8 +1,10 @@
 #!/bin/bash
+apt-get update
+
 apt-get install build-essential
 
-sudo apt-get install libncurses-dev
-sudo apt-get install clang-format-10
+apt-get install libncurses-dev
+apt-get install clang-format-10
 
 apt-get install zsh
 
