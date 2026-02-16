@@ -1,0 +1,1 @@
+au BufRead,BufNewFile *.core_desc set filetype=coredsl
