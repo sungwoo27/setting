@@ -4,10 +4,11 @@ This module contains Neovim configuration files using lazy.nvim as the plugin ma
 
 ## Prerequisites
 
-- Neovim 0.8+ (installed via prerequisites.sh)
+- macOS or Ubuntu/Debian Linux
+- Neovim 0.11+ (installed via prerequisites.sh)
 - Git (for cloning lazy.nvim)
 - Node.js and npm (for Mason LSP servers)
-- GCC/G++ (for Treesitter parsers)
+- A C compiler (Apple Clang on macOS, GCC/G++ on Linux)
 - Python 3 (for some LSP servers)
 
 ## Installation

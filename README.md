@@ -1,6 +1,6 @@
 # Setting Repository
 
-Ubuntu 24.04 development environment configuration.
+Development environment configuration for macOS and Ubuntu 24.04.
 
 ## Modules
 
@@ -8,6 +8,11 @@ Ubuntu 24.04 development environment configuration.
 - **Zsh** - Shell with Oh My Zsh and Powerlevel10k
 
 ## Installation
+
+Supported platforms:
+
+- macOS (Apple Silicon and Intel) using Homebrew
+- Ubuntu/Debian Linux (`x86_64` and `arm64`) using apt
 
 ```bash
 cd ~/setting
@@ -20,7 +25,8 @@ cd ~/setting
 
 **Zsh:**
 ```bash
-chsh -s $(which zsh)
+# Ubuntu/Debian only; macOS already uses Zsh by default
+chsh -s "$(command -v zsh)"
 p10k configure
 source ~/.zshrc
 ```
@@ -43,3 +49,6 @@ nvim                      # Plugins auto-install
 ```
 
 See module READMEs for details.
+
+The installer detects the operating system automatically; a separate macOS
+branch is not required. On macOS it installs Homebrew first when necessary.

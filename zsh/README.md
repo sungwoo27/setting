@@ -4,6 +4,7 @@ This module contains Zsh configuration with Oh My Zsh and Powerlevel10k theme.
 
 ## Prerequisites
 
+- macOS or Ubuntu/Debian Linux
 - Zsh shell (installed via prerequisites.sh)
 - Git (for cloning plugins)
 - curl (for Oh My Zsh installation)
@@ -65,7 +66,8 @@ The following Oh My Zsh plugins are enabled:
 
 1. Change default shell to Zsh:
    ```bash
-   chsh -s $(which zsh)
+   # Ubuntu/Debian only; macOS already uses Zsh by default
+   chsh -s "$(command -v zsh)"
    ```
    (You may need to log out and back in for this to take effect)
 
